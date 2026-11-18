@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>황세영 | Filmography</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0d12;--panel:#16161e;--line:#2a2a36;--tx:#ececf1;--mu:#9a9aaa;--ac:#e8b44c;--ac2:#7c6cf0;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f4ef;--panel:#fff;--line:#ddd8cc;--tx:#1a1a22;--mu:#666674;--ac:#b0791a;--ac2:#5b4bd6;color-scheme:light}}
+:root[data-theme="dark"]{--bg:#0d0d12;--panel:#16161e;--line:#2a2a36;--tx:#ececf1;--mu:#9a9aaa;--ac:#e8b44c;--ac2:#7c6cf0}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Noto Sans KR',system-ui,sans-serif;line-height:1.7}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:12px 5vw;flex-wrap:wrap;gap:8px}
+.logo{font-family:'Playfair Display',Georgia,serif;font-weight:900;letter-spacing:.12em;color:var(--ac)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:14px;padding:6px 14px;border-radius:20px;color:var(--mu);transition:.2s}
+nav a:hover{color:var(--tx)}nav a.on{background:var(--ac);color:#111;font-weight:700}
+main{max-width:1000px;margin:0 auto;padding:0 5vw 60px}
+.view{display:none;animation:f .5s}.view.on{display:block}
+@keyframes f{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+.hero{padding:70px 0 40px;text-align:center;border-bottom:1px solid var(--line)}
+.eyebrow{letter-spacing:.35em;font-size:12px;color:var(--ac);text-transform:uppercase}
+.hero h1{font-family:'Playfair Display','Noto Sans KR',serif;font-size:clamp(44px,10vw,92px);margin:10px 0;line-height:1.1;font-weight:900}
+.hero p{color:var(--mu);max-width:520px;margin:0 auto}
+.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.tag{border:1px solid var(--ac);color:var(--ac);padding:3px 14px;border-radius:20px;font-size:13px}
+h2{font-family:'Playfair Display','Noto Sans KR',serif;font-size:26px;margin:48px 0 18px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.credits{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card small{display:block;color:var(--mu);font-size:12px;letter-spacing:.15em;text-transform:uppercase}
+.card b{font-size:20px}
+.film{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.yr{font-family:'Playfair Display',serif;font-size:26px;color:var(--ac);font-weight:700}
+.film h3{margin:0 0 4px;font-size:19px}.film p{margin:0;color:var(--mu);font-size:15px}
+.badge{display:inline-block;font-size:11px;padding:1px 9px;border-radius:10px;background:var(--ac2);color:#fff;margin-left:8px;vertical-align:middle}
+.btn{background:var(--ac);color:#111;border:0;padding:9px 20px;border-radius:24px;font:700 14px 'Noto Sans KR',sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.g{background:transparent;color:var(--tx);border:1px solid var(--line)}
+.player{display:grid;grid-template-columns:200px 1fr;gap:28px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;align-items:center}
+.disc{width:200px;height:200px;border-radius:50%;background:conic-gradient(from 0deg,#2b2b3c,#7c6cf0,#2b2b3c,#e8b44c,#2b2b3c);position:relative;margin:auto;animation:sp 6s linear infinite paused;box-shadow:0 10px 40px rgba(124,108,240,.3)}
+.disc.play{animation-play-state:running}.disc::after{content:"";position:absolute;inset:38%;border-radius:50%;background:var(--bg);border:4px solid var(--line)}
+@keyframes sp{to{transform:rotate(360deg)}}
+.bar{height:5px;background:var(--line);border-radius:3px;margin:16px 0 6px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--ac)}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+ol.pl{list-style:none;margin:20px 0 0;padding:0}
+ol.pl li{display:flex;align-items:center;gap:14px;padding:13px 16px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;cursor:pointer;background:var(--panel)}
+ol.pl li:hover{border-color:var(--ac)}ol.pl li.on{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 10%,var(--panel))}
+ol.pl .n{color:var(--mu);width:22px}ol.pl .t{flex:1}ol.pl .d{color:var(--mu);font-size:13px}
+.note{color:var(--mu);font-size:13px;margin-top:10px}
+.gwrap{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px}
+#tc{background:#0a0a10;border:2px solid var(--line);border-radius:8px;max-width:100%;height:auto;touch-action:none}
+.side{min-width:180px}.side .card{margin-bottom:12px;padding:14px}.side b{font-size:24px;color:var(--ac)}
+.pad{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}.pad button{padding:12px 0;font-size:18px}
+form.cm{display:grid;gap:10px;margin-bottom:24px}
+input,textarea{background:var(--panel);color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:15px 'Noto Sans KR',sans-serif;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--ac);border-color:transparent}
+.c{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--ac);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+.c .h{display:flex;justify-content:space-between;font-size:13px;color:var(--mu)}.c .h b{color:var(--tx);font-size:15px}.c p{margin:6px 0 0;white-space:pre-wrap;word-break:break-word}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:30px;border-top:1px solid var(--line)}
+@media(max-width:640px){.player{grid-template-columns:1fr}.film{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SEYOUNG HWANG</div>
+  <nav>
+    <a href="#home" data-v="home">홈</a><a href="#music" data-v="music">노래</a><a href="#game" data-v="game">게임</a><a href="#comments" data-v="comments">방명록</a>
+  </nav>
+</header>
+<main>
+
+<!-- HOME -->
+<section class="view" id="v-home">
+  <div class="hero">
+    <div class="eyebrow">A Film About</div>
+    <h1>황세영</h1>
+    <p>노래하고, 게임하고, 오늘도 한 장면씩 쌓아가는 건양대학교 학생의 필모그래피에 오신 것을 환영합니다.</p>
+    <div class="tags"><span class="tag">INFP</span><span class="tag">건양대학교</span><span class="tag">Singer · Gamer</span></div>
+  </div>
+
+  <h2>Credits</h2>
+  <div class="credits">
+    <div class="card"><small>Name</small><b>황세영</b></div>
+    <div class="card"><small>Birthday</small><b>2006. 03. 03</b></div>
+    <div class="card"><small>University</small><b>건양대학교</b></div>
+    <div class="card"><small>MBTI</small><b>INFP</b></div>
+    <div class="card"><small>Hobby</small><b>노래 · 게임</b></div>
+  </div>
+
+  <h2>Filmography</h2>
+  <div>
+    <div class="film"><div class="yr">2026</div><div><h3>건양대학교 재학<span class="badge">NOW SHOWING</span></h3><p>대학생이라는 새로운 시리즈의 주인공. 매일이 새로운 에피소드.</p></div></div>
+    <div class="film"><div class="yr">Hobby I</div><div><h3>노래 – MC THE MAX<span class="badge">PLAYLIST</span></h3><p>감정을 가득 담은 발라드 록과 함께하는 시간. <a href="#music" style="color:var(--ac)">노래 듣기 →</a></p></div></div>
+    <div class="film"><div class="yr">Hobby II</div><div><h3>게임 – Tetris<span class="badge">PLAY</span></h3><p>떨어지는 블록 속에서 집중력을 시험하는 한 판 승부. <a href="#game" style="color:var(--ac)">직접 해보기 →</a></p></div></div>
+    <div class="film"><div class="yr">2006</div><div><h3>3월 3일, 탄생</h3><p>모든 이야기의 시작. 감성적인 INFP 주인공의 첫 등장.</p></div></div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section class="view" id="v-music">
+  <h2>Now Playing · MC THE MAX</h2>
+  <div class="player">
+    <div class="disc" id="disc"></div>
+    <div>
+      <div class="eyebrow">MC THE MAX</div>
+      <h3 id="pt" style="font-size:28px;margin:6px 0">—</h3>
+      <div class="bar"><i id="pb"></i></div>
+      <div class="d" id="pm" style="color:var(--mu);font-size:13px">재생 버튼을 눌러보세요</div>
+      <div class="ctl">
+        <button class="btn g" id="prev">⏮</button>
+        <button class="btn" id="pp">▶ 재생</button>
+        <button class="btn g" id="next">⏭</button>
+        <a class="btn g" id="yt" target="_blank" rel="noopener">YouTube에서 듣기 ↗</a>
+      </div>
+    </div>
+  </div>
+  <p class="note">※ 저작권 보호를 위해 음원 파일은 포함하지 않았습니다. 곡을 선택한 뒤 "YouTube에서 듣기"를 누르면 공식 음원을 바로 검색해 들을 수 있어요.</p>
+  <ol class="pl" id="pl"></ol>
+</section>
+
+<!-- GAME -->
+<section class="view" id="v-game">
+  <h2>Tetris</h2>
+  <div class="gwrap">
+    <canvas id="tc" width="240" height="480"></canvas>
+    <div class="side">
+      <div class="card"><small>SCORE</small><b id="sc">0</b></div>
+      <div class="card"><small>LINES</small><b id="ln">0</b></div>
+      <div class="card"><small>LEVEL</small><b id="lv">1</b></div>
+      <div class="card"><small>BEST</small><b id="bs">0</b></div>
+      <button class="btn" id="st" style="width:100%">시작 / 재시작</button>
+      <p class="note">← → 이동 · ↑ 회전 · ↓ 소프트드롭<br>Space 하드드롭 · P 일시정지</p>
+      <div class="pad">
+        <button class="btn g" data-k="L">◀</button><button class="btn g" data-k="R">▶</button><button class="btn g" data-k="U">⟳</button><button class="btn g" data-k="D">▼</button>
+      </div>
+      <button class="btn g" data-k="H" style="width:100%;margin-top:8px">⏬ 하드드롭</button>
+    </div>
+  </div>
+</section>
+
+<!-- COMMENTS -->
+<section class="view" id="v-comments">
+  <h2>Guestbook</h2>
+  <form class="cm" id="cf">
+    <input id="cn" maxlength="20" placeholder="이름 (닉네임)" required>
+    <textarea id="cb" rows="3" maxlength="300" placeholder="응원의 한마디를 남겨주세요 (300자 이내)" required></textarea>
+    <div><button class="btn" type="submit">댓글 남기기</button> <span class="note" id="cs"></span></div>
+  </form>
+  <div id="cl"></div>
+</section>
+</main>
+<footer>© 2026 황세영 · INFP · 건양대학교</footer>
+
+<script>
+/* ---------- Router ---------- */
+const views=['home','music','game','comments'];
+function route(){let h=(location.hash||'#home').slice(1);if(!views.includes(h))h='home';
+  views.forEach(v=>{document.getElementById('v-'+v).classList.toggle('on',v===h);});
+  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.v===h));
+  if(h!=='game')pause(true);window.scrollTo(0,0)}
+addEventListener('hashchange',route);
+
+/* ---------- Music ---------- */
+const songs=[
+ {t:'그대가 분다',d:'대표곡 · 7집 타이틀'},
+ {t:'행복하지 말아요',d:'대표곡'},
+ {t:'잠시만 안녕',d:'대표곡'},
+ {t:'그대는 눈물겹다',d:'대표곡'},
+ {t:'넋이라도 있고 없고',d:'대표곡'},
+ {t:'해바라기도 가끔 목이 아프죠',d:'인기곡'},
+ {t:'가슴아 그만해',d:'인기곡'},
+ {t:'사랑하니까',d:'Moon Child · 2001'},
+ {t:'사랑의 시',d:'대표곡 · 2004'}
+];
+let cur=0,playing=false,prog=0,timer;
+const pl=document.getElementById('pl');
+songs.forEach((s,i)=>{const li=document.createElement('li');
+  li.innerHTML=`<span class="n">${i+1}</span><span class="t">${s.t}</span><span class="d">${s.d}</span>`;
+  li.onclick=()=>{sel(i);play()};pl.appendChild(li)});
+function sel(i){cur=(i+songs.length)%songs.length;prog=0;
+  document.getElementById('pt').textContent=songs[cur].t;
+  document.getElementById('pm').textContent=songs[cur].d;
+  document.getElementById('yt').href='https://www.youtube.com/results?search_query='+encodeURIComponent('MC THE MAX '+songs[cur].t);
+  [...pl.children].forEach((l,k)=>l.classList.toggle('on',k===cur));
+  document.getElementById('pb').style.width='0'}
+function play(){playing=true;document.getElementById('disc').classList.add('play');
+  document.getElementById('pp').textContent='⏸ 일시정지';clearInterval(timer);
+  timer=setInterval(()=>{prog+=.5;document.getElementById('pb').style.width=prog+'%';if(prog>=100){sel(cur+1);}},250)}
+function pause(){playing=false;clearInterval(timer);document.getElementById('disc').classList.remove('play');
+  document.getElementById('pp').textContent='▶ 재생'}
+document.getElementById('pp').onclick=()=>playing?pause():play();
+document.getElementById('prev').onclick=()=>{sel(cur-1);if(playing)play()};
+document.getElementById('next').onclick=()=>{sel(cur+1);if(playing)play()};
+sel(0);
+
+/* ---------- Tetris ---------- */
+const cv=document.getElementById('tc'),cx=cv.getContext('2d'),B=24,W=10,H=20;
+const COL=['','#00d1d1','#3b6cf0','#f0932b','#f1c40f','#2ecc71','#a55eea','#eb4d4b'];
+const SH=[[],[[1,1,1,1]],[[2,0,0],[2,2,2]],[[0,0,3],[3,3,3]],[[4,4],[4,4]],[[0,5,5],[5,5,0]],[[0,6,0],[6,6,6]],[[7,7,0],[0,7,7]]];
+let grid,pc,nx,score,lines,level,over,run,last,acc,best=0;
+try{best=+localStorage.getItem('tbest')||0}catch(e){}
+const $=id=>document.getElementById(id);
+const rnd=()=>{const t=1+Math.floor(Math.random()*7);return{m:SH[t].map(r=>r.slice()),x:3,y:0}};
+const rot=m=>m[0].map((_,i)=>m.map(r=>r[i]).reverse());
+function hit(m,x,y){for(let r=0;r<m.length;r++)for(let c=0;c<m[r].length;c++)if(m[r][c]){const gx=x+c,gy=y+r;if(gx<0||gx>=W||gy>=H||(gy>=0&&grid[gy][gx]))return true}return false}
+function lock(){pc.m.forEach((row,r)=>row.forEach((v,c)=>{if(v&&pc.y+r>=0)grid[pc.y+r][pc.x+c]=v}));
+  let n=0;for(let r=H-1;r>=0;r--){if(grid[r].every(v=>v)){grid.splice(r,1);grid.unshift(Array(W).fill(0));n++;r++}}
+  if(n){lines+=n;score+=[0,100,300,500,800][n]*level;level=1+Math.floor(lines/10)}
+  pc=nx;nx=rnd();if(hit(pc.m,pc.x,pc.y)){over=true;run=false;if(score>best){best=score;try{localStorage.setItem('tbest',best)}catch(e){}}}ui()}
+function ui(){$('sc').textContent=score;$('ln').textContent=lines;$('lv').textContent=level;$('bs').textContent=best}
+function mv(dx){if(!hit(pc.m,pc.x+dx,pc.y))pc.x+=dx}
+function dn(){if(!hit(pc.m,pc.x,pc.y+1)){pc.y++;return true}lock();return false}
+function rt(){const m=rot(pc.m);for(const k of[0,-1,1,-2,2])if(!hit(m,pc.x+k,pc.y)){pc.m=m;pc.x+=k;return}}
+function hd(){let n=0;while(!hit(pc.m,pc.x,pc.y+1)){pc.y++;n++}score+=n*2;lock()}
+function blk(x,y,v,a=1){cx.globalAlpha=a;cx.fillStyle=COL[v];cx.fillRect(x*B+1,y*B+1,B-2,B-2);cx.fillStyle='rgba(255,255,255,.22)';cx.fillRect(x*B+1,y*B+1,B-2,5);cx.globalAlpha=1}
+function draw(){cx.fillStyle='#0a0a10';cx.fillRect(0,0,240,480);cx.strokeStyle='#1c1c28';cx.lineWidth=1;
+  for(let i=1;i<W;i++){cx.beginPath();cx.moveTo(i*B,0);cx.lineTo(i*B,480);cx.stroke()}
+  for(let i=1;i<H;i++){cx.beginPath();cx.moveTo(0,i*B);cx.lineTo(240,i*B);cx.stroke()}
+  if(!grid)return;grid.forEach((r,y)=>r.forEach((v,x)=>v&&blk(x,y,v)));
+  if(pc){let gy=pc.y;while(!hit(pc.m,pc.x,gy+1))gy++;pc.m.forEach((r,j)=>r.forEach((v,i)=>v&&blk(pc.x+i,gy+j,v,.2)));
+    pc.m.forEach((r,j)=>r.forEach((v,i)=>v&&blk(pc.x+i,pc.y+j,v)))}
+  cx.fillStyle='rgba(0,0,0,.65)';cx.textAlign='center';
+  if(!run){cx.fillRect(0,190,240,100);cx.fillStyle='#e8b44c';cx.font='bold 22px sans-serif';
+    cx.fillText(over?'GAME OVER':(grid?'PAUSED':'TETRIS'),120,232);cx.fillStyle='#ccc';cx.font='13px sans-serif';cx.fillText(over?'시작 버튼으로 다시 도전!':'시작 버튼을 눌러주세요',120,262)}}
+function loop(t){requestAnimationFrame(loop);if(run){acc+=t-last;const sp=Math.max(80,800-(level-1)*70);if(acc>sp){acc=0;dn()}}last=t;draw();ui()}
+function start(){grid=Array.from({length:H},()=>Array(W).fill(0));score=0;lines=0;level=1;over=false;run=true;acc=0;pc=rnd();nx=rnd();ui()}
+function act(k){if(!run)return;({L:()=>mv(-1),R:()=>mv(1),U:rt,D:()=>{if(dn())score++},H:hd})[k]()}
+$('st').onclick=start;
+document.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>act(b.dataset.k));
+addEventListener('keydown',e=>{if(!document.getElementById('v-game').classList.contains('on'))return;
+  const m={ArrowLeft:'L',ArrowRight:'R',ArrowUp:'U',ArrowDown:'D',' ':'H'}[e.key];
+  if(m){e.preventDefault();act(m)}else if(e.key==='p'||e.key==='P'){if(grid&&!over)run=!run}});
+requestAnimationFrame(loop);
+
+/* ---------- Guestbook ---------- */
+const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let db=null,local=[];
+try{local=JSON.parse(localStorage.getItem('gb')||'[]')}catch(e){}
+let remote=[];
+function render(){const all=[...remote,...local].sort((a,b)=>b.ts-a.ts);
+  $('cl').innerHTML=all.length?all.map(c=>`<div class="c"><div class="h"><b>${esc(c.name)}</b><span>${new Date(c.ts).toLocaleString('ko-KR')}</span></div><p>${esc(c.text)}</p></div>`).join(''):'<p class="note">아직 댓글이 없어요. 첫 번째 방문자가 되어주세요! 🎬</p>'}
+render();
+(async()=>{try{if(window.claude){db=await claude.use('db');
+  if(db){const t=setTimeout(()=>{},10000);
+    db.collection('comments').orderBy('ts','desc').limit(100).onSnapshot(s=>{clearTimeout(t);
+      remote=s.docs.map(d=>typeof d.data==='function'?d.data():d.data).filter(Boolean);render()},()=>{})}}}catch(e){}})();
+$('cf').addEventListener('submit',async e=>{e.preventDefault();
+  const c={name:$('cn').value.trim(),text:$('cb').value.trim(),ts:Date.now()};if(!c.name||!c.text)return;
+  let shared=false;
+  if(db){try{await db.collection('comments').add(c);shared=true}catch(er){}}
+  if(!shared){local.unshift(c);try{localStorage.setItem('gb',JSON.stringify(local.slice(0,50)))}catch(er){}}
+  $('cb').value='';$('cs').textContent=shared?'등록되었습니다 ✓':'등록되었습니다 ✓ (이 브라우저에 저장됨)';render()});
+
+route();
+</script>
+</body>
+</html>
